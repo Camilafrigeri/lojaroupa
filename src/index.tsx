@@ -9,7 +9,12 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <App />
+    import { render } from "react-dom";
+
+import App from "./App";
+
+const rootElement = document.getElementById("root");
+render(<App />, rootElement);
   </React.StrictMode>
 );
 
